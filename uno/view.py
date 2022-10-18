@@ -37,7 +37,7 @@ def calculo(request,nacimiento,futuro):
                     <h1>ud tiene: %s años, y en el año %s tendra %s años</h1>
                   </body>
                 </html>
-              """% (edad,futuro,edadfutura) #usa el marcador de posicion %s para poner el contenido de la variable fechaactual
+              """% (edad,futuro,edadfutura) #usa el marcador de posicion %s para poner el contenido de las variables
     return HttpResponse(documento)
 #fin funcion
     

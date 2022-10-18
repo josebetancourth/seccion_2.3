@@ -17,10 +17,14 @@ from django.contrib import admin
 from django.urls import path
 
 from uno.view import calculo, fecha, hola
+from uno.view2 import fecha2, lista, saludar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hola/',hola),
     path('fecha/',fecha),
-    path('calculo/<int:nacimiento>/<int:futuro>/',calculo)
+    path('calculo/<int:nacimiento>/<int:futuro>/',calculo),
+    path('saludar/',saludar),
+    path('fecha2/',fecha2),
+    path('lista/',lista)
 ]
