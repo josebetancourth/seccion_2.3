@@ -54,7 +54,7 @@ ROOT_URLCONF = 'uno.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["/Users/JOSE/pruebai/uno/uno/plantillas"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

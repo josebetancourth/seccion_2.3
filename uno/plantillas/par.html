@@ -7,12 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <ol>
-        {% for tarea in listatareas %}
-           
-            <li>{{tarea}}</li>
-           
-        {% endfor %}
-    </ol>
+     <h1>Elementos pares de la lista:</h1>
+        {% for numero in pares %}<!-- for mejorado que recorre la lista pares-->
+           <h1>{{numero}}<br></h1>
+        {% endfor %}    
 </body>
 </html>

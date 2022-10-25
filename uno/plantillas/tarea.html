@@ -8,10 +8,12 @@
 </head>
 <body>
     <ol>
-        {% for tarea in listatareas %}
-           
-            <li>{{tarea}}</li>
-           
+        {% for tarea in lista %} 
+          {% if tarea != 'Repasar Python' %} 
+            <li>{{tarea}}</li> 
+          {% else %}
+            <li style="color:blue">{{tarea}}</li>
+          {% endif %}   
         {% endfor %}
     </ol>
 </body>

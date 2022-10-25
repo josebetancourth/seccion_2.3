@@ -16,8 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from uno.lista import pares, tareas
+from uno.numero import number
+
+
 from uno.view import calculo, fecha, hola
 from uno.view2 import fecha2, lista, saludar
+from uno.vista import listado, mensaje
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,5 +31,10 @@ urlpatterns = [
     path('calculo/<int:nacimiento>/<int:futuro>/',calculo),
     path('saludar/',saludar),
     path('fecha2/',fecha2),
-    path('lista/',lista)
+    path('lista/',lista),
+    path('listado/',tareas),
+    path('mensaje/',mensaje),
+    path('tareas/',listado),
+    path('pares/',pares),
+    path('listapar/',number)
 ]
