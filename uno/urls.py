@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from uno.cancion import videomusical
+from uno.hijo import hijo
 
 from uno.lista import pares, tareas
+from uno.musica import video
 from uno.numero import number
+from uno.videomusical import videomusica
 
 
 from uno.view import calculo, fecha, hola
@@ -36,5 +40,9 @@ urlpatterns = [
     path('mensaje/',mensaje),
     path('tareas/',listado),
     path('pares/',pares),
-    path('listapar/',number)
+    path('listapar/',number),
+    path('hereda/',hijo),
+    path('musica/',video),
+    path('cancion/',videomusical),
+    path('video/',videomusica)
 ]
