@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from uno.cancion import videomusical
 from uno.hijo import hijo
+from uno.hijomolde import molde
 
 from uno.lista import pares, tareas
 from uno.musica import video
@@ -44,5 +45,6 @@ urlpatterns = [
     path('hereda/',hijo),
     path('musica/',video),
     path('cancion/',videomusical),
-    path('video/',videomusica)
+    path('video/',videomusica),
+    path('molde/',molde)
 ]
