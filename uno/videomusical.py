@@ -9,7 +9,7 @@ def videomusica(request):
     
     hora = "%s:%s:%s"% (hora,minuto,segundo)
     
-    plantilla = loader.get_template("hijopadre2.html")
+    plantilla = loader.get_template("hijo3.html")
     pagina = plantilla.render({"hora":hora})
     
     return HttpResponse(pagina)
