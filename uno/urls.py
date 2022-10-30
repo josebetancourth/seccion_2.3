@@ -18,6 +18,7 @@ from django.urls import path
 from uno.cancion import videomusical
 from uno.hijo import hijo
 from uno.hijomolde import molde
+from uno.hijomoldepadre import moldepadre
 
 from uno.lista import pares, tareas
 from uno.musica import video
@@ -46,5 +47,6 @@ urlpatterns = [
     path('musica/',video),
     path('cancion/',videomusical),
     path('video/',videomusica),
-    path('molde/',molde)
+    path('molde/',molde),
+    path('moldepadre/',moldepadre)
 ]
