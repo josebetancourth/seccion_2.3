@@ -9,7 +9,7 @@ def video(request):
     
     horas = "%s:%s:%s"% (hora,minuto,segundo)
     
-    plantilla = loader.get_template("hijo1.html")
+    plantilla = loader.get_template("hijopadre1.html")
     pagina = plantilla.render({"horas":horas})
     
     return HttpResponse(pagina)

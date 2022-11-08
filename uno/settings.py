@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'universidad'
 ]
 
 MIDDLEWARE = [
@@ -122,7 +123,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')#copiar sin modificar
 STATICFILES_DIRS = [
     BASE_DIR / 'uno/static' #verificar ruta carpeta static
 ]
-
+#pruebai/uno/uno/static
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
